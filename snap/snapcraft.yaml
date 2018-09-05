@@ -8,9 +8,12 @@ confinement: strict
 #   base: core18
 
 apps:
-  service-test:
-    command: "yes"
+  simple:
+    command: sleep 60
     daemon: simple
+  forking:
+    command: sh -c "sleep 60 &"
+    daemon: forking
 
 parts:
   scripts:

@@ -1,3 +1,4 @@
 #!/bin/bash -e
 
-snapctl stop --disable service-test
+snapctl stop --disable service-test.simple
+snapctl stop --disable service-test.forking
