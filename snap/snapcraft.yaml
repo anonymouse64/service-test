@@ -1,0 +1,17 @@
+name: service-test
+version: '0.1'
+summary: Run a service
+description: Test of disabling service in install hook
+grade: stable
+confinement: strict
+# passthrough:
+#   base: core18
+
+apps:
+  service-test:
+    command: "yes"
+    daemon: simple
+
+parts:
+  scripts:
+    plugin: nil
